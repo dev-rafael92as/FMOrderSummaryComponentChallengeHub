@@ -1,0 +1,77 @@
+body {
+    background-image: url(./images/pattern-background-desktop.svg) no-repeat center
+}
+
+
+
+.container {
+    display: block;
+    margin: auto;
+    width: 450px;
+}
+
+.full-card {
+    margin-top: 5rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border: 1px solid black;
+}
+
+.illustration-hero {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+}
+
+.container-text {
+    text-align: center;
+}
+
+.conteudo-plano {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid; 
+    border-radius: 1rem;
+    background-color: #ccc;
+    width: 25rem;
+    margin: auto;
+}
+
+.conteudo-plano-imagem {
+    width: 48px;
+    height: 48px;
+    padding-top: 20px;
+}
+
+.conteudo-plano a {
+    padding-top: 30px;
+}
+
+.button-payment {
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 20px 0px 5px;
+}
+
+.button-cancel {
+    border: none;
+    background: none;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
