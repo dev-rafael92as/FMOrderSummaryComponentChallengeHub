@@ -1,20 +1,63 @@
-body {
-    background-image: url(./images/pattern-background-desktop.svg) no-repeat center
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.listaDeCores {
+    color: hsl(225, 100%, 94%);
+    color: hsl(245, 75%, 52%);
+    
+    color: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    color: hsl(223, 47%, 23%);
 }
 
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: 'Red Hat Display', 'sans-serif';
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+.background-image {
+    background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+    
+    position: absolute;
+    top: -50rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
 
 .container {
     display: block;
     margin: auto;
     width: 450px;
+    margin-bottom: 20px;
 }
 
 .full-card {
     margin-top: 5rem;
-    border-bottom-right-radius: 2rem;
+    border-radius: 2rem;
     border-bottom-left-radius: 2rem;
-    border: 1px solid black;
+    background-color:white;
+    box-shadow: 0 1rem 40px -16px grey;
 }
 
 .illustration-hero {
@@ -27,22 +70,24 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
     margin: auto;
+    align-items: center;
 }
 
 .container-text {
     text-align: center;
+    width: 20rem;
+    margin-bottom: 10px;
 }
 
 .conteudo-plano {
     display: flex;
     justify-content: space-around;
-    border: 1px solid; 
     border-radius: 1rem;
-    background-color: #ccc;
-    width: 25rem;
-    margin: auto;
+    background-color: hsl(225, 100%, 98%);
+    width: 350px;
+    margin-bottom: 10px;
 }
 
 .conteudo-plano-imagem {
@@ -51,21 +96,62 @@ body {
     padding-top: 20px;
 }
 
+.conteudo-plano-imagem-texto {
+    display: flex;
+    gap: 20px;
+}
+
 .conteudo-plano a {
-    padding-top: 30px;
+    padding-top: 35px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.conteudo-plano a:hover {
+    opacity: 90%;
+    text-decoration: none;
+}
+
+.conteudo-plano p {
+    margin: 0;
+    padding-bottom: 25px;
 }
 
 .button-payment {
-    padding: .5rem;
+    padding: 1rem;
     border-radius: .5rem;
     margin: 20px 0px 5px;
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color:hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 16px;
+    width: 350px;
+    box-shadow: 0 1rem 40px -16px grey
+}
+
+.button-payment:hover {
+    opacity: 80%;
 }
 
 .button-cancel {
     border: none;
     background: none;
-    margin-top: 10px;
-    padding-bottom: 20px;
+    margin-top: 5px;
+    padding: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button-cancel:hover {
+    color:hsl(223, 47%, 23%);
 }
 
 .attribution { 
@@ -75,3 +161,4 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
